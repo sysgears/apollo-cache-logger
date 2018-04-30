@@ -23,21 +23,18 @@ read(query CounterState {
   counterState @client {
     counter
   }
-}
-) -> {"counterState":{"counter":1,"__typename":"CounterState"}}
+}) -> {"counterState":{"counter":1,"__typename":"CounterState"}}
 diff(query CounterState {
   counterState @client {
     counter
     __typename
   }
-}
-) -> {"result":{"counterState":{"counter":1,"__typename":"CounterState"}},"complete":true}
+}) -> {"result":{"counterState":{"counter":1,"__typename":"CounterState"}},"complete":true}
 read(query counterQuery {
   counter {
     amount
   }
-}
-) -> {"counter":{"amount":19,"__typename":"Counter"}}
+}) -> {"counter":{"amount":19,"__typename":"Counter"}}
 ```
 
 ## License

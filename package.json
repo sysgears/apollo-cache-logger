@@ -1,6 +1,6 @@
 {
   "name": "apollo-cache-logger",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Apollo Cache Logger",
   "main": "./lib/bundle.umd.js",
   "module": "./lib/index.js",
@@ -12,7 +12,7 @@
     "bundle": "rollup -c",
     "build": "tsc -p .",
     "watch": "tsc -w",
-    "lint": "tslint 'src/*.ts*' -p tsconfig.json --type-check && tslint 'test/*.ts*' -p tsconfig.json --type-check",
+    "lint": "tslint 'src/*.ts*' -p tsconfig.json && tslint 'test/*.ts*' -p tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1",
     "minify:browser": "uglifyjs -c -m -o ./lib/bundle.min.js -- ./lib/bundle.js",
     "postbuild": "npm run bundle",

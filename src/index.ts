@@ -12,7 +12,7 @@ export const defaultFormatter = (methodName: string, args: any[], error: any, re
     : methodName +
       '(' +
       (args.length === 1 && !!args[0] && (!!args[0].definitions || (!!args[0].query && !!args[0].query.definitions))
-        ? print(args[0].query || args[0])
+        ? print(args[0].query || args[0]).trim()
         : JSON.stringify(args)) +
       ')' +
       ` ${error ? 'e' : ''}-> ` +
