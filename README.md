@@ -37,7 +37,7 @@ read(query counterQuery {
 }) -> {"counter":{"amount":19,"__typename":"Counter"}}
 ```
 ### Routing
-If you want to manage several Apollo Caches separately and route between them on a GraphQL document-basis please check [`apollo-cache-router`[(https://github.com/sysgears/apollo-cache-router)
+If you want to manage several Apollo Caches separately and route between them on a GraphQL document-basis please check [`apollo-cache-router`](https://github.com/sysgears/apollo-cache-router)
 
 ## License
 Copyright © 2018 [SysGears LTD]. This source code is licensed under the [MIT] license.
